@@ -1,0 +1,14 @@
+
+
+.col {
+  transition: width .3s;
+  @media #{$brk-2col-layout} {
+    @include span-columns(6);
+    @include omega(2n);
+  }
+
+      @media #{$brk-wide} {
+      @include span-columns(4);
+      @include omega(3n);
+    }
+}

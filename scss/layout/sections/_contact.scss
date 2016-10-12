@@ -1,0 +1,12 @@
+/* ---- Contact ---- */
+
+.contact-block {
+    @extend %centered;
+    @extend %container-padding;
+
+    @media #{$brk-wide} {
+      max-width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+}

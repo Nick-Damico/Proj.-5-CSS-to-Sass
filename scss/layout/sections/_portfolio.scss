@@ -1,0 +1,16 @@
+/* Portfolio Section */
+
+.proj-title {
+    @extend %centered;
+    padding-top: 0.5em;
+}
+
+.proj-descr {
+    @extend %centered;
+}
+
+.main-portfolio {
+    @extend %container-padding;
+    @extend %clearfix;
+    background: $color-bg-light;
+}

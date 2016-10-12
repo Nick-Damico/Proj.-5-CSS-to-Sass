@@ -1,0 +1,34 @@
+/* ---- Font Styles---- */
+
+.name {
+    font-size: $font-large;
+    margin-bottom: 0;
+    /* 24px / 16px */
+}
+.about, .proj-descr, .footer-name, .btn-back {
+    font-size: $font-small;
+    /* 14px / 16px */
+}
+.proj-title, .title, .contact-block p  {
+    font-size: $font-med;
+    /* 16px / 16px */
+    transition: font-size .5s;
+}
+
+.title {
+  @media #{$brk-wide} {
+    font-size: $font-large;
+  }
+}
+
+.contact-block p, .about {
+    letter-spacing: .1em;
+
+    @media #{$brk-wide} {
+      font-size: $font-med;
+    }
+}
+
+.title, .name, .proj-title, .skills-title {
+    font-family: $stack-raleway;
+}

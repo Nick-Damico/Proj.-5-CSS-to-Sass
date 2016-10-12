@@ -1,0 +1,90 @@
+/* Toggle Drop-down menu button */
+
+.drop-down {
+  position: absolute;
+  right: 6%;
+  top: 5px;
+
+    & span {
+      display: block;
+      width: 19px;
+      height: 3px;
+      margin: 4px 0;
+      background: rgb(0,0,0);
+      z-index: 99;
+    }
+
+    @media #{$brk-wide} {
+      display:none;
+    }
+}
+
+.main-nav .selected {
+  background: $black;
+  color: $white;
+}
+
+.main-nav li {
+    display: inline-block;
+}
+
+.main-nav {
+    margin-bottom: 3em;
+  & > ul {
+      padding-left: 0;
+  }
+
+  & li {
+      margin-bottom: 0.3125em;
+      /* 5px / 16px */
+  }
+  & a,
+  & li {
+      display: block;
+  }
+
+  & a {
+      @extend %text-upper;
+      background: $color-bg-light;
+      padding-top: 0.625em;
+      /* 10px / 16px */
+      padding-bottom: 0.625em;
+      /* 10px / 16px */
+      border-radius: 5px;
+
+      &:hover {
+          background: $color-bg-black;
+      }
+  }
+
+  // & li a:last-child {
+  //     padding-right: 0;
+  // }
+}
+
+@media #{$brk-wide} {
+ 
+  .main-nav {
+    @include span-columns(6 of 12);
+    float: right;
+    text-align: right;
+    margin-right: 0;
+    display: inline-block;
+  }
+  .main-nav li {
+      display: inline-block;
+      &:hover {
+        background: $black;
+      }
+  }
+  .main-nav a {
+      background: none;
+      padding: 1em .625em;
+      border-radius: 0;
+      /* 5px / 16px - 10px /16px */
+      &:hover {
+        background: $black;
+        color: $white;
+      }
+  }
+}

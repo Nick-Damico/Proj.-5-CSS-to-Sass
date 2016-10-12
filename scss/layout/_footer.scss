@@ -1,0 +1,80 @@
+/* ---- Footer---- */
+.main-footer {
+  @extend %clearfix;
+    border-top: 1px solid $grey;
+    padding: 1em 0;
+}
+
+.footer-name {
+    @extend %float-left;
+    margin-bottom: 0;
+
+    @media #{$brk-wide} {
+      @include span-columns(4);
+      display: initial;
+    }
+}
+
+.footer-nav {
+    display: none;
+
+    @media #{$brk-wide} {
+      @include span-columns(6);
+      display: initial;
+      float: right;
+      text-align: right;
+    }
+
+}
+
+.footer-nav > ul {
+    padding-left: 0;
+    margin-bottom: 0;
+
+    @media #{$brk-wide} {
+      float: right;
+    }
+}
+
+.footer-nav li {
+  @media #{$brk-wide} {
+    display: inline-block;
+    margin-right: .25em;
+  }
+}
+
+.footer-nav a {
+  @extend %text-upper;
+
+  @media #{$brk-wide} {
+    display: block;
+    padding: .25em;
+  }
+}
+
+.footer-links li a {
+    padding-top: 0;
+}
+
+.btn-back {
+  @extend %text-upper;
+  float: right;
+
+  @media #{$brk-wide} {
+    display:none;
+  }
+
+  &:hover {
+    color: $boston-blue;
+    }
+  }
+
+/* -- Shows Footer Nav -- */
+
+
+// .footer-nav li+ li {
+//     margin-left: .25em;
+// }
+// .footer-nav li:last-child {
+//     margin-right: 0;
+// }

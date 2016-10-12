@@ -1,0 +1,75 @@
+/* ---- SKILLS ---- */
+
+.skills-block {
+    @extend %clearfix;
+    @extend %centered;
+    @extend %container-padding;
+    background: $color-bg-dark;
+}
+
+.skills-title {
+    color: $color-text-light;
+    margin-bottom: 0.12em;
+    text-align: left;
+}
+
+.td-profile-container {
+    @extend %margin-0-center;
+    width: 50%;
+
+    @media #{$brk-wide} {
+      @include span-columns(4);
+      float: left;
+    }
+}
+
+.td-avatar {
+    width: 90%;
+    border-radius: $br-round;
+    border: 8px solid $light-green;
+}
+
+.skill-pbars {
+    width: 100%;
+    padding-top: 1em;
+
+    @media #{$brk-wide} {
+      @include span-columns(8);
+      float: right;
+    }
+}
+
+.progress-container {
+    width: 100%;
+    height: 1.5em;
+    position: relative;
+    margin-bottom: 0.5em;
+    background-color: $color-bg-light;
+}
+
+.progressbar {
+    height: 100%;
+    position: absolute;
+    line-height: inherit;
+    z-index: 1000;
+}
+
+.html-bar {
+    width: 60%;
+    background: $color-html-skill;
+}
+
+.css-bar {
+    width: 80%;
+    background: $color-css-skill;
+}
+
+.js-bar {
+    width: 45%;
+    background: $color-js-skill;
+}
+
+.design-bar {
+    width: 65%;
+    background: $color-design-skill;
+}
