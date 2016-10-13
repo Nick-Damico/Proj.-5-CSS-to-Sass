@@ -38,17 +38,18 @@
       @include desktop {
         display: inline-block;
         margin-right: .25em;
-
-        a {
-          @include desktop {
-            display: block;
-            padding: 0 .25em .25em;
-          }
-        }
-
       }
     }
 
+    a {
+      @include desktop {
+        display: block;
+        padding: 0 .25em .25em;
+      } // End @media include
+      &:hover {
+        color: $boston-blue;
+      }
+    } // End <a>
   }
 
 }

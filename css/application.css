@@ -248,10 +248,12 @@ img {
       .main-footer .footer-nav li {
         display: inline-block;
         margin-right: .25em; } }
-  @media (min-width: 1024px) and (min-width: 1024px) {
-    .main-footer .footer-nav li a {
-      display: block;
-      padding: 0 .25em .25em; } }
+    @media (min-width: 1024px) {
+      .main-footer .footer-nav a {
+        display: block;
+        padding: 0 .25em .25em; } }
+    .main-footer .footer-nav a:hover {
+      color: #3f8abf; }
 
 /* Drop Down Menu Btn */
 .btn-back {

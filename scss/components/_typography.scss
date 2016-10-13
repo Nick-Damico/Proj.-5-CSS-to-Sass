@@ -26,7 +26,7 @@
     /* 40px / 16px */
     margin-bottom: 0;
 
-      @media #{$brk-wide} {
+      @include desktop {
         font-size: $font-large;
       }
 }
@@ -34,7 +34,7 @@
 .contact-block p, .about {
     letter-spacing: .1em;
 
-    @media #{$brk-wide} {
+    @include desktop {
       font-size: $font-med;
     }
 }
