@@ -4,7 +4,7 @@
     @extend %centered;
     @extend %container-padding;
 
-    @media #{$brk-wide} {
+    @include desktop {
       max-width: 50%;
       margin-left: auto;
       margin-right: auto;

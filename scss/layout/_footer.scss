@@ -8,7 +8,7 @@
       @extend %float-left;
       margin-bottom: 0;
 
-      @media #{$brk-wide} {
+      @include desktop {
         @include span-columns(4);
         display: initial;
       }
@@ -18,7 +18,7 @@
     @extend %text-upper;
     display: none;
 
-    @media #{$brk-wide} {
+    @include desktop {
       @include span-columns(6);
       display: initial;
       float: right;
@@ -29,18 +29,18 @@
       padding-left: 0;
       margin-bottom: 0;
 
-      @media #{$brk-wide} {
+      @include desktop {
         float: right;
       }
     }
 
     li {
-      @media #{$brk-wide} {
+      @include desktop {
         display: inline-block;
         margin-right: .25em;
 
         a {
-          @media #{$brk-wide} {
+          @include desktop {
             display: block;
             padding: 0 .25em .25em;
           }
@@ -67,4 +67,3 @@
     color: $boston-blue;
     }
   }
-

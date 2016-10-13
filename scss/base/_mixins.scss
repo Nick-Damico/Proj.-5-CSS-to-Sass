@@ -6,3 +6,21 @@
   font-weight: $weight;
   color: $color;
 }
+
+@mixin col-layout {
+  @media #{$brk-2col-layout} {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media #{$brk-tablet} {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media #{$brk-wide} {
+    @content;
+  }
+}
