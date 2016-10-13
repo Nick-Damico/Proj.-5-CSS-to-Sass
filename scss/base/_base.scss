@@ -3,8 +3,6 @@ BASE STYLES
 /***************************************/
 
 *, *:after, *:before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 body {
@@ -33,6 +31,7 @@ a {
     &:hover {
         font-weight: 600;
         color: $color-text-light;
+        -webkit-transition: font-weight .5s;
         transition: font-weight .5s;
     }
 }

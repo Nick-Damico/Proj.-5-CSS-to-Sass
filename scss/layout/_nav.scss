@@ -10,7 +10,7 @@
       width: 19px;
       height: 3px;
       margin: 4px 0;
-      background: rgb(0,0,0);
+      background: $color-bg-black;
       z-index: 99;
     }
 
@@ -20,8 +20,8 @@
 }
 
 .main-nav .selected {
-  background: $black;
-  color: $white;
+  background: $color-bg-black;
+  color: $color-text-light;
 }
 
 .main-nav li {
@@ -56,14 +56,10 @@
           background: $color-bg-black;
       }
   }
-
-  // & li a:last-child {
-  //     padding-right: 0;
-  // }
 }
 
 @media #{$brk-wide} {
- 
+
   .main-nav {
     @include span-columns(6 of 12);
     float: right;
@@ -74,7 +70,7 @@
   .main-nav li {
       display: inline-block;
       &:hover {
-        background: $black;
+        background: $color-bg-black;
       }
   }
   .main-nav a {
@@ -83,8 +79,8 @@
       border-radius: 0;
       /* 5px / 16px - 10px /16px */
       &:hover {
-        background: $black;
-        color: $white;
+        background: $color-bg-black;
+        color: $color-text-light;
       }
   }
 }

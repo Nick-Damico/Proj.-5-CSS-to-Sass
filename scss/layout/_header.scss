@@ -6,6 +6,7 @@
     @extend %centered;
     position: relative;
     background-color: $color-bg-med;
+    background: -webkit-linear-gradient( rgba($color-bg-med,0.9), rgba($color-bg-med,.9)), url('#{$path-img}/bg-2.jpg') no-repeat center;
     background: linear-gradient( rgba($color-bg-med,0.9), rgba($color-bg-med,.9)), url('#{$path-img}/bg-2.jpg') no-repeat center;
     background-attachment: fixed;
     background-size: cover;
@@ -16,8 +17,21 @@
       margin-bottom: .5em;
     }
 
+    .about {
+      max-width: 75%;
+      margin: 1em auto;
+      text-align: left;
+
+       @media #{$brk-tablet} {
+        @include span-columns(6 of 12);
+        float: left;
+        margin-top: 0;
+      }
+
+    }
+
     @media #{$brk-wide} {
-      & { 
+      & {
         height: 425px;
         }
 
@@ -29,48 +43,33 @@
         padding-top: .5em;
       }
     }
-}
 
-.about {
-    max-width: 75%;
-    margin: 1em auto;
-    text-align: left;
+    .profile {
+      &-container {
+        background-color: rgba($color-bg-light, .7);
+        border-radius: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
 
-    @media #{$brk-tablet} {
-      @include span-columns(6 of 12);
-      float: left;
-      margin-top: 0;
-    }
-    @media #{$brk-wide} {
-      @include span-columns(8 of 12);
-      float: left;
-      margin-top: 0;
-    }
-}
-
-.profile {
-  &-container {
-    background-color: rgba($color-bg-light, .7);
-    border-radius: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-
-      @media #{$brk-tablet} {
-        @include span-columns(6 of 12);
-        clear: both;
-        float: right;
-        margin-right: 0;
-      }
-      @media #{$brk-wide} {
-        @include span-columns(4 of 12);
-        float: right;
-        margin-right: 0;
-      }
-  }
+          @media #{$brk-tablet} {
+            @include span-columns(6 of 12);
+            clear: both;
+            float: right;
+            margin-right: 0;
+          }
+          @media #{$brk-wide} {
+            @include span-columns(4 of 12);
+            float: right;
+            margin-right: 0;
+          }
+     }
 
   &-pic {
       vertical-align: middle;
       border-radius: $br-round;
       width: 12em;
   }
+}
+
+
 }

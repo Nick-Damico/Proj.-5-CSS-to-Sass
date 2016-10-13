@@ -12,13 +12,23 @@
 .proj-title, .title, .contact-block p  {
     font-size: $font-med;
     /* 16px / 16px */
+    -webkit-transition: font-size .5s;
     transition: font-size .5s;
 }
 
+
+/* ---- h2 Title all Containers/ Sections ---- */
+
 .title {
-  @media #{$brk-wide} {
-    font-size: $font-large;
-  }
+    @extend %centered;
+    @extend %text-upper;
+    padding-bottom: 2.5em;
+    /* 40px / 16px */
+    margin-bottom: 0;
+
+      @media #{$brk-wide} {
+        font-size: $font-large;
+      }
 }
 
 .contact-block p, .about {

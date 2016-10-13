@@ -10,13 +10,3 @@
   margin: $margin-center;
   width: 90%;
 }
-
-/* ---- h2 Title all Containers/ Sections ---- */
-
-.title {
-    @extend %centered;
-    @extend %text-upper;
-    padding-bottom: 2.5em;
-    /* 40px / 16px */
-    margin-bottom: 0;
-}
